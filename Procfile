@@ -1,1 +1,1 @@
-Worker: node index.js
+Worker: npm update venom-bot && node index.js
