@@ -26,6 +26,10 @@ function start(client) {
       }
     }
   });
+  client.onIncomingCall(async (call) => {
+    console.log(call);
+    client.sendText(call.peerJid, "📞❌ Desculpe, ainda não posso atender chamadas!");
+  });
 }
 
 function getStage(user) {
