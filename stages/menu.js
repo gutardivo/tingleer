@@ -34,7 +34,7 @@ function execute(user, msg) {
 
   if (msg === "7") {
     banco.db[user].stage = 7;
-    return ["*1* - Meu pedido só marca como *objeto postado*\n*2*  - Meu pedido marca como entregue mas *não chegou*\n*3* - Tentei em vários celulares e *não pegou*\n*4* - Gostaria de saber se meu celular é *compatível*\n*5* - Não estou achando o *app para ativar* o Tinglee\n*6* - Gostaria de saber sobre o *andamento do meu pedido*\n*7* - Outro\n*#* - Para finalizar seu atendimento ou voltar ao início"];
+    return ["*1* - Meu pedido só marca como *objeto postado*\n*2*  - Meu pedido marca como entregue mas *não chegou*\n*3* - Tentei em vários celulares e *não pegou*\n*4* - Gostaria de saber se meu celular é *compatível*\n*5* - Não estou achando o *app para ativar* o Tinglee\n*6* - Gostaria de saber sobre o *andamento do meu pedido*\n*7* - Meu email *não foi respondido*\n*8* - Outro\n*#* - Para finalizar seu atendimento ou voltar ao início"];
   }
 
   if (msg === "#") {
@@ -52,7 +52,7 @@ function execute(user, msg) {
     return ["Hola, que tal?"];
   }
 
-  if (msg !== '1' && msg !== '2' && msg !== '3' && msg !== '4' && msg !== '5' && msg !== '#' && msg !== '!') {
+  if (msg !== '1' && msg !== '2' && msg !== '3' && msg !== '4' && msg !== '5' && msg !== '6' && msg !== '7' && msg !== '#' && msg !== '!') {
     return ["Desculpe não entendi, responda apenas com um caractere de número. *Ex: 1*\nCaso eu não possa te ajudar envie um email para contato@tinglee.co para que um *humano* possa te atender ;)\n\n*#* - Caso queira finalizar o atendimento ou *voltar ao início*"];
   }
 }
