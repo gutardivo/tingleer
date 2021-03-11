@@ -9,7 +9,7 @@ function execute(user, msg) {
 
   if (msg === "2") {
     banco.db[user].stage = 2;
-    return ["Certo, o processo de ativação deve ser feito uma única vez em um celular compatível presente nesse link: shop.tinglee.co/pages/celulares-compativeis\n\nVocê pode também acessar esse tutorial em vídeo: https://www.youtube.com/watch?v=wGkqa0Op14g&t=213s.\n\n*1* - Não recebi o *código de cadastro*\n*2* - Está aparecendo um *erro* na tela\n*3* - Não estou achando o app Tinglee\n*#* - Para finalizar seu atendimento ou voltar ao início"];
+    return ["Certo, o processo de ativação deve ser feito uma única vez em um celular compatível presente nesse link: shop.tinglee.co/pages/celulares-compativeis\n\nVocê pode também acessar esse tutorial em vídeo: https://www.youtube.com/watch?v=wGkqa0Op14g&t=213s.\n\n*1* - Não recebi o *código de cadastro*\n*2* - Está aparecendo um *erro* na tela\n*3* - Não estou achando o *app Tinglee*\n*4* - A tela de *Preparado para ativar* sobe e não acontece nada (Android)\n*#* - Para finalizar seu atendimento ou voltar ao início"];
   }
 
   if (msg === "3") {
