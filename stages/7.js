@@ -34,6 +34,11 @@ function execute(user, msg) {
 
   if (msg === "7") {
     banco.db[user].stage = 0;
+    return ["Peço perdão, meus humanos falharam com você, mande um email novamente com o assunto *Resposta* por favor! contato@tinglee.co"];
+  }
+
+  if (msg === "8") {
+    banco.db[user].stage = 0;
     return ["Ok, antes de mais nada, certifique-se que eu não possa te ajudar. Caso queira voltar para o início digite *Oi*.\n\nSe realmente não puder te ajudar, envie o que precisar via email (contato@tinglee.co)"];
   }
 
@@ -49,7 +54,7 @@ function execute(user, msg) {
     return ["Robô desativado! Caso queira finalizar o atendimento ou voltar ao início digite *#*"]
   }
 
-  if (msg !== '1' && msg !== '2' && msg !== '3' && msg !== '4' && msg !== '5' && msg !== '6' && msg !== '#' && msg !== '!') {
+  if (msg !== '1' && msg !== '2' && msg !== '3' && msg !== '4' && msg !== '5' && msg !== '6' && msg !== '7' && msg !== '8' && msg !== '#' && msg !== '!') {
     return ["Desculpe não entendi, responda apenas com um caractere de número. *Ex: 1*\nCaso eu não possa te ajudar envie um email para contato@tinglee.co para que um *humano* possa te atender ;)\n\n*#* - Caso queira finalizar o atendimento ou *voltar ao início*"];
   }
 }
