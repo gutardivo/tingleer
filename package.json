@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "rxjs": "^6.6.6",
+    "rxjs-compat": "^6.6.6",
+    "sharp": "^0.27.2",
+    "venom-bot": "https://github.com/orkestral/venom/releases/download/nightly/venom-bot-nightly.tgz",
+    "type": "module"
+  }
+}
