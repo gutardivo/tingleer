@@ -10,7 +10,7 @@ function execute(user, msg) {
 
   if (msg === "2") {
     banco.db[user].stage = 22;
-    return ["*1* - Está dando erro na hora da ativação\n*2* - Está dando erro na hora da leitura\n*3* -  Está dando código inválido no app"];
+    return ["*1* - Está dando erro na *hora da ativação*\n*2* - Está dando erro na *hora da leitura*\n*3* -  Está dando *código inválido* no app"];
   }
 
   if (msg === "3") {
